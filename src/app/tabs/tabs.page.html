@@ -1,0 +1,18 @@
+<ion-tabs>
+
+  <ion-tab-bar slot="bottom">
+    @for (tab of tabsMenu; track $index) {
+      <ion-tab-button [tab]="tab.tab" [href]="tab.url" (click)="setActiveTab(tab.tab)" [ngClass]="{ 'active': selectedTab === tab.tab}">
+      
+        @if(selectedTab!==tab.tab){
+          <img [src]="tab.tabIconInactive" alt="Triangle Icon" class="w-6 h-6" />
+        }@else if(selectedTab === tab.tab){
+
+          <img [src]="tab.tabIconActive" alt="Triangle Icon" class="w-6 h-6" />
+        } 
+        <ion-label>{{tab.title}}</ion-label>
+      </ion-tab-button>
+    }
+  </ion-tab-bar>
+
+</ion-tabs>
