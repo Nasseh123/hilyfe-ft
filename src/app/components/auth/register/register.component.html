@@ -1,3 +1,111 @@
-<p>
-  register works!
-</p>
+<ion-content>
+  <div
+    class="bg-white mx-auto flex gap-4 p-2 h-screen justify-start items-center flex-col max-w-tablet w-full">
+    <div class="flex flex-col max-w-md w-full px-5">
+      <!-- Logo and Menu Icon -->
+      <div class="flex items-center justify-between w-full py-2">
+        <img
+          src="../../../../assets/hilyfe-icon2.png"
+          alt="Logo"
+          class="h-12" />
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          width="24"
+          height="24"
+          class="text-gray-700"
+          fill="none"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2">
+          <line x1="3" x2="21" y1="12" y2="12" />
+          <line x1="3" x2="21" y1="6" y2="6" />
+          <line x1="3" x2="21" y1="18" y2="18" />
+        </svg>
+      </div>
+
+      <div class="flex flex-col items-start">
+        <h2 class="text-xl font-bold text-gray-900 mt-2">Let's get started!</h2>
+        <p class="text-gray-500 text-sm">
+          Hey there! Sign up to start using communities
+        </p>
+      </div>
+
+      <!-- Form Fields -->
+      <div class="w-full space-y-3 mt-4">
+        <ion-input
+          aria-label="Username"
+          placeholder="Username"
+          class="custom outline-none"
+          fill="outline"
+          [maxlength]="20"></ion-input>
+        <ion-input
+          aria-label="Email Address"
+          placeholder="Email Address"
+          class="custom"
+          fill="outline"
+          [maxlength]="20"></ion-input>
+
+        <!-- Phone Number -->
+        <div class="flex space-x-2 border">
+          <select class="select-field w-1/4 px-3 outline-none">
+            <option>US</option>
+            <option>KE</option>
+            <option>IN</option>
+          </select>
+          <ion-input
+            label-placement=""
+            fill="outline"
+            placeholder="+1-773"></ion-input>
+        </div>
+        <div class="relative w-full">
+          <ion-input
+            [type]="showPassword ? 'text' : 'password'"
+            placeholder="Password"
+            class="custom"
+            fill="outline"
+            aria-label="Password"></ion-input>
+
+          <!-- Eye Icon for Toggling Password Visibility -->
+          <button
+            type="button"
+            (click)="togglePasswordVisibility()"
+            class="absolute inset-y-0 right-3 flex items-center text-gray-500">
+            <ion-icon
+              [name]="showPassword ? 'eye-off-outline' : 'eye-outline'"
+              class="text-xl"></ion-icon>
+          </button>
+        </div>
+
+        <ion-input
+          aria-label="Referal code"
+          placeholder="Referal code"
+          class="custom"
+          fill="outline"
+          [maxlength]="20"></ion-input>
+      </div>
+
+      <!-- Sign Up Button -->
+      <button
+        class="w-full bg-[#169445] text-white text-lg py-3 rounded-3xl mt-5">
+        Sign up
+      </button>
+
+      <!-- Terms & Conditions -->
+      <p class="text-gray-500 text-xs text-center mt-3">
+        By clicking “Sign up”, you agree to our
+        <span class="text-black">Terms of Service</span> and
+        <span class="text-black">Privacy Policy</span>.
+      </p>
+
+      <!-- Login Link -->
+      <p class="text-center mt-5">
+        Already have an account?
+        <a href="#" class="text-green-600 font-medium" routerLink="/auth/login"
+          >Log in</a
+        >
+      </p>
+    </div>
+  </div>
+</ion-content>

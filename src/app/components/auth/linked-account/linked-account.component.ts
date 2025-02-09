@@ -2,22 +2,21 @@ import { Component, OnInit } from '@angular/core';
 import { IonicModule } from '@ionic/angular';
 
 @Component({
-  selector: 'app-login',
-  templateUrl: './login.component.html',
-  styleUrls: ['./login.component.scss'],
+  selector: 'app-linked-account',
+  templateUrl: './linked-account.component.html',
+  styleUrls: ['./linked-account.component.scss'],
   standalone:true,
   imports:[IonicModule]
 })
-export class LoginComponent  implements OnInit {
+export class LinkedAccountComponent  implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {
-    
-  }
+  ngOnInit() {}
   showPassword: boolean = false;
     
   togglePasswordVisibility() {
     this.showPassword = !this.showPassword;
   }
+
 }
