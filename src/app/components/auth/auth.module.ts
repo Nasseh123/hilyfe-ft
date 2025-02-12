@@ -15,8 +15,9 @@ import { AuthHeroComponent } from './auth-hero/auth-hero.component';
     IonicModule,
     CommonModule,
     FormsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AuthRoutingModule
   ],
-  declarations: [LoginComponent,AuthHeroComponent]
+  declarations: [LoginComponent,],
 })
-export class TabsPageModule {}
+export class AuthModule {}
