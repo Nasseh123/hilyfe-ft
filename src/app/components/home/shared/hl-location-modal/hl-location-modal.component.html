@@ -1,0 +1,43 @@
+<ion-content>
+  <ion-modal
+    [isOpen]="isAlertOpen"
+    class="custom-alert-modal"
+    backdropDismiss="false">
+    <ng-template>
+      <div class="flex justify-center items-center h-screen opacity-100">
+        <div>
+          <div class="bg-white rounded-lg shadow-sm gap-2 flex flex-col">
+            <!-- Close Button -->
+            <div class="flex items-center justify-between">
+              <div></div>
+              <h1 class="close-icon" (click)="closeAlert()">✕</h1>
+            </div>
+
+            <!-- Location Icon -->
+            <ion-img
+              src="/assets/location-icon.png"
+              class="mx-auto mt-[20px] mb-[20px]"
+              alt="Location icon"></ion-img>
+
+            <!-- Alert Title -->
+            <h1 class="text-center text-[22px] font-sm font-light py-4">
+              Your Location is set to
+              <span class="font-bold text-sm">Chicago Ridge</span>
+            </h1>
+
+            <!-- Continue Button -->
+            <ion-button
+              class="text-white marker:y-3"
+              shape="round"
+              size="medium">
+              Continue
+            </ion-button>
+
+            <!-- Change Location -->
+            <h1 class="text-center text-gray-500">Change location</h1>
+          </div>
+        </div>
+      </div>
+    </ng-template>
+  </ion-modal>
+</ion-content>

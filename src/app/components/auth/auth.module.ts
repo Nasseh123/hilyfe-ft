@@ -18,6 +18,6 @@ import { AuthHeroComponent } from './auth-hero/auth-hero.component';
     AppRoutingModule,
     AuthRoutingModule
   ],
-  declarations: [LoginComponent,],
+  declarations: [],
 })
 export class AuthModule {}

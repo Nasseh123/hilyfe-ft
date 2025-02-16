@@ -1,0 +1,26 @@
+<!-- the modal -->
+<ion-modal
+  [isOpen]="isModalOpen"
+  [initialBreakpoint]="0.3"
+  [breakpoints]="[0.3, 0.6, 1]"
+  class="bottom-sheet-modal"
+  backdropDismiss="false"
+  showBackdrop="true">
+  <ng-template>
+    <ion-content class="modal-content p-[20px]">
+      <!-- Close Button -->
+      <ion-button fill="clear" class="close-btn" (click)="closeModal()">
+        <ion-icon name="close-outline"></ion-icon>
+      </ion-button>
+
+      <img src="/assets/danger-icon.png" alt="" class="px-[20px] pt-[20px]" />
+      <h2 class="text-2xl font-bold text-left py-3 text-white px-[20px]">
+        Site is Closed for Delivery
+      </h2>
+      <p class="text-2xl font-normal text-left text-white px-[20px]">
+        Reason the site is closed is going to go here and probably expected time
+        to come back to business.
+      </p>
+    </ion-content>
+  </ng-template>
+</ion-modal>

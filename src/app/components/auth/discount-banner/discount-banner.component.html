@@ -1,0 +1,28 @@
+<ion-content>
+  <app-layout>
+    <div class="h-full w-full">
+      <app-select-location></app-select-location>
+      <div
+        class="bg-[#FF9316] flex flex-col gap-4 pb-[20px] items-center justify-center p-3 rounded-lg min-h-[130px] my-[20px]">
+        <ion-card-header
+          class="flex flex-row w-full justify-between items-center">
+          <ion-card-title class="text-whte">
+            <h1 class="text-start text-white font-bold">Discount Codes!!</h1>
+          </ion-card-title>
+          <div
+            class="rounded-full cursor-pointer h-[50px] text-[24px] font-light p-1 w-[50px] text-white bg-gray-50 hover:bg-gray-100 hover:bg-opacity-50 bg-opacity-15 flex justify-center items-center">
+            x
+          </div>
+        </ion-card-header>
+        <ion-card-title>
+          <h1 class="text-white font-extralight px-3">
+            You have used 2/3 of your free discount codes. These codes are
+            automatically applied to your orders.
+          </h1>
+        </ion-card-title>
+      </div>
+      <app-search-input></app-search-input>
+      <app-product-card></app-product-card>
+    </div>
+  </app-layout>
+</ion-content>
