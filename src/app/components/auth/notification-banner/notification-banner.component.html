@@ -3,6 +3,14 @@
     <div class="h-full w-full">
       <app-search-input></app-search-input>
       <app-product-card></app-product-card>
+      <ion-toast
+        [isOpen]="showToast"
+        header="Notifications"
+        message="Subtitle Hyperlink"
+        position="top"
+        [buttons]="toastButtons"
+        cssClass="custom-toast">
+      </ion-toast>
     </div>
   </app-layout>
 </ion-content>
