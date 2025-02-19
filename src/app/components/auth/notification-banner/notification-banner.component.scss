@@ -1,0 +1,17 @@
+.custom-toast {
+    --background: white !important;
+    --color: #0000; 
+    --border-radius: 10px; 
+    --box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); 
+    font-size: 1.2rem; 
+    text-align: center; 
+    padding: 12px 16px; 
+    height: 100px;
+  }
+  
+  .custom-toast .toast-button {
+    color: #0000 !important; /* Red close button */
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
