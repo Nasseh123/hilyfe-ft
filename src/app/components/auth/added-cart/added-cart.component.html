@@ -1,0 +1,144 @@
+<ion-content>
+  <app-product-detail-layout>
+    <!-- Back Button -->
+    <div class="flex justify-between w-full items-center pt-1">
+      <div
+        class="rounded-full border border-gray-500 flex items-center cursor-pointer p-[5px]">
+        <!-- https://feathericons.dev/?search=chevron-left&iconset=feather -->
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          width="14"
+          height="14"
+          class="main-grid-item-icon"
+          fill="none"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2">
+          <polyline points="15 18 9 12 15 6" />
+        </svg>
+      </div>
+      <h1 class="text-lg text-center">Product Details</h1>
+      <div></div>
+    </div>
+
+    <div class="flex flex-col items-center justify-center">
+      <div class="flex flex-col gap-1">
+        <h2 class="font-bold text-lg">Dosi-Cake</h2>
+        <div class="flex flex-row items-center py-1">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            width="16"
+            height="16"
+            class="main-grid-item-icon"
+            fill="#F59E0B"
+            stroke="#F59E0B"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2">
+            <polygon
+              points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+          </svg>
+
+          <span class="pt-1 px-1">4.8</span>
+        </div>
+      </div>
+      <!-- Product Image -->
+      <ion-img
+        src="/assets/product1.png"
+        alt="Product Image"
+        class="w-full max-h-[260px]"></ion-img>
+    </div>
+
+    <!-- Product Details -->
+    <div class="flex justify-between w-full">
+      <p class="font-bold text-lg">$45.00 USD</p>
+      <div class="price-stock">
+        <p class="font-light text-md text-gray-500 pt-1">Available in Stock</p>
+      </div>
+    </div>
+
+    <!-- Size Options -->
+    <div>
+      <h1 class="font-bold text-black text-lg pt-1 text-left">Size</h1>
+
+      <div class="flex flex-row gap-4">
+        <ion-button
+          [class.selected]="selectedSize === 'S'"
+          class="ion-select-btn"
+          (click)="selectSize('S')">
+          <div class="flex flex-col items-center gap-1">
+            <h1 class="text-white">S</h1>
+            <p>3.5</p>
+          </div>
+        </ion-button>
+        <ion-button
+          [class.selected]="selectedSize === 'M'"
+          color="light"
+          class="ion-select-btn"
+          (click)="selectSize('M')">
+          <div class="flex flex-col items-center gap-1">
+            <h1 class="text-gray-500">M</h1>
+            <p class="text-gray-500">3.5</p>
+          </div>
+        </ion-button>
+        <ion-button
+          [class.selected]="selectedSize === 'L'"
+          color="light"
+          class="ion-select-btn"
+          (click)="selectSize('L')">
+          <div class="flex flex-col items-center gap-1">
+            <h1 class="text-gray-500">L</h1>
+            <p class="text-gray-500">3.5</p>
+          </div>
+        </ion-button>
+      </div>
+    </div>
+
+    <!-- Quantity Selector -->
+    <app-hl-quantity></app-hl-quantity>
+
+    <!-- Description -->
+    <div>
+      <h1 class="font-bold text-black text-lg pt-1 text-left">Description</h1>
+
+      <p>
+        Dosi-Cake is a delicious cannabis-infused edible that provides a
+        balanced dose of THC for a smooth and relaxing high.
+      </p>
+    </div>
+    <!-- add to cart button -->
+    <ion-button expand="full" shape="round" size="large" class="light text-sm">
+      <div class="flex flex-row items-center gap-2">
+        <!-- https://feathericons.dev/?search=check&iconset=feather -->
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          width="18"
+          height="18"
+          class="main-grid-item-icon"
+          fill="none"
+          stroke="white"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2">
+          <polyline points="20 6 9 17 4 12" />
+        </svg>
+
+        <h1 class="font-bold text-white">Added To Cart</h1>
+      </div>
+    </ion-button>
+    <!-- Go Cart Button -->
+    <ion-button
+      expand="full"
+      shape="round"
+      color="dark"
+      fill="outline"
+      size="large"
+      class="light text-sm mb-4"
+      >Go to Cart
+    </ion-button>
+  </app-product-detail-layout>
+</ion-content>
