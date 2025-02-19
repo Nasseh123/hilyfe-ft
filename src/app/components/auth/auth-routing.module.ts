@@ -13,6 +13,8 @@ import { DiscountBannerComponent } from './discount-banner/discount-banner.compo
 import { PromoBannerComponent } from './promo-banner/promo-banner.component';
 import { PromoRunningComponent } from './promo-running/promo-running.component';
 import { LocationComponent } from './location/location.component';
+import { NotificationBannerComponent } from './notification-banner/notification-banner.component';
+import { QuickSelectionComponent } from './quick-selection/quick-selection.component';
 
 
 const routes: Routes = [
@@ -53,6 +55,14 @@ const routes: Routes = [
       {
         path: 'product-rating',
         component: ProductRatingComponent,
+      },
+      {
+        path: 'quick-selection',
+        component: QuickSelectionComponent,
+      },
+      {
+        path: 'notification-banner',
+        component: NotificationBannerComponent,
       },
      
       {

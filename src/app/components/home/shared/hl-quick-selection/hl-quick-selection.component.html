@@ -1,0 +1,128 @@
+<!-- Product Modal -->
+<ion-modal
+  [isOpen]="isModalOpen"
+  [initialBreakpoint]="0.4"
+  [breakpoints]="[0.4, 0.7]"
+  class="bottom-sheet-modal"
+  [backdropDismiss]="false"
+  [showBackdrop]="true">
+  <ng-template>
+    <ion-content>
+      <!-- Product Modal -->
+      <ion-modal
+        [isOpen]="isModalOpen"
+        [initialBreakpoint]="0.7"
+        [breakpoints]="[0.6, 0.85]"
+        class="bottom-sheet-modal"
+        [backdropDismiss]="false"
+        [showBackdrop]="true">
+        <ng-template>
+          <ion-content
+            class="p-4 pb-6 mb-4 flex flex-col gap-3 rounded-md shadow-md">
+            <!-- Modal Header -->
+            <div class="flex justify-between items-center p-4">
+              <div></div>
+              <h2 class="text-lg font-semibold">Select Options</h2>
+              <ion-button color="light" fill="clear" (click)="closeModal()">
+                <div
+                  class="flex justify-center items-center h-[10px] text-lg w-[10px] rounded-full bg-gray-200 text-gray-500 p-4">
+                  x
+                </div>
+              </ion-button>
+            </div>
+
+            <!-- Product Info -->
+            <div class="px-4 mt-2 flex flex-col gap-2">
+              <h2 class="text-xl font-bold">Dosi-Cake</h2>
+              <div class="flex items-center text-gray-500 text-sm">
+                <span>⭐ 4.8 |</span>
+                <span class="ml-1 text-blue-500 underline">240 Reviews</span>
+              </div>
+              <p class="text-lg font-semibold mt-1">$45.00 USD</p>
+              <p class="text-hl_green_main text-sm">Available in Stock</p>
+            </div>
+
+            <!-- Size Selection -->
+            <div class="px-4 mt-4">
+              <h3 class="text-md font-semibold pb-2">Size</h3>
+              <div class="flex gap-4 mt-2">
+                <ion-button size="default">
+                  <h1 class="text-white">S</h1>
+                </ion-button>
+                <ion-button size="default" color="light">
+                  <h1 class="text-black">M</h1>
+                </ion-button>
+                <ion-button size="default" color="light">
+                  <h1 class="text-black">L</h1>
+                </ion-button>
+                <ion-button size="default" color="light">
+                  <h1 class="text-black">XL</h1>
+                </ion-button>
+              </div>
+            </div>
+
+            <!-- Quantity Selector -->
+            <div class="px-4 mt-4">
+              <h3 class="text-md font-semibold pb-2">Quantity</h3>
+              <div
+                class="flex items-center gap-4 mt-2 border border-gray-300 rounded-md w-max px-4 py-2">
+                <span class="text-lg font-sembold">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    width="18"
+                    height="18"
+                    class="main-grid-item-icon cursor-pointer"
+                    fill="none"
+                    stroke="gray"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2">
+                    <line x1="5" x2="19" y1="12" y2="12" />
+                  </svg>
+                </span>
+                <span class="text-lg text-black font-semibold px-2">1</span>
+                <span class="text-lg font-semibold">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    width="18"
+                    height="18"
+                    class="main-grid-item-icon cursor-pointer"
+                    fill="none"
+                    stroke="gray"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2">
+                    <line x1="12" x2="12" y1="5" y2="19" />
+                    <line x1="5" x2="19" y1="12" y2="12" />
+                  </svg>
+                </span>
+              </div>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="px-4 mt-6 pb-6">
+              <ion-button
+                expand="full"
+                fill="outline"
+                shape="round"
+                size="large"
+                color="dark">
+                <h1 class="text-black text-sm">Continue Shopping</h1>
+              </ion-button>
+              <ion-button
+                expand="full"
+                size="large"
+                fill="solid"
+                shape="round"
+                class="mt-4">
+                <h1 class="text-white text-sm">View Details and Checkout</h1>
+              </ion-button>
+            </div>
+          </ion-content>
+        </ng-template>
+      </ion-modal>
+    </ion-content>
+  </ng-template>
+</ion-modal>
