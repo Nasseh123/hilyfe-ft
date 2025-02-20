@@ -3,6 +3,7 @@
     <!-- Back Button -->
     <div class="flex justify-between w-full items-center">
       <div
+        routerLink="/"
         class="rounded-full border border-gray-500 flex items-center cursor-pointer p-[5px]">
         <!-- https://feathericons.dev/?search=chevron-left&iconset=feather -->
         <svg
@@ -23,15 +24,8 @@
       <div></div>
     </div>
 
-    <!-- Product Image -->
-    <ion-img
-      src="/assets/product1.png"
-      alt="Product Image"
-      class="w-full max-h-[260px]"></ion-img>
-
-    <!-- Product Details -->
-    <div class="flex justify-between w-full pt-[20px]">
-      <div class="flex flex-col gap-2">
+    <div class="flex flex-col items-center justify-center">
+      <div class="flex flex-col gap-1">
         <h2 class="font-bold text-lg">Dosi-Cake</h2>
         <div class="flex flex-row items-center">
           <svg
@@ -52,13 +46,18 @@
           <span class="pt-1 px-1">4.8</span>
         </div>
       </div>
-      <div>
-        <p class="font-bold text-lg">$45.00 USD</p>
-        <div class="price-stock">
-          <p class="font-light text-md text-gray-500 pt-1">
-            Available in Stock
-          </p>
-        </div>
+      <!-- Product Image -->
+      <ion-img
+        src="/assets/product1.png"
+        alt="Product Image"
+        class=""></ion-img>
+    </div>
+
+    <!-- Product Details -->
+    <div class="flex justify-between w-full">
+      <p class="font-bold text-lg">$45.00 USD</p>
+      <div class="price-stock">
+        <p class="font-light text-md text-gray-500 pt-1">Available in Stock</p>
       </div>
     </div>
 
