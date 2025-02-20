@@ -14,28 +14,21 @@ import { ToastController } from '@ionic/angular';
   standalone: true,
   imports: [IonicModule,LayoutComponent,ProductCardComponent,SearchInputComponent,HlNotificationToastComponent],
 })
-export class NotificationBannerComponent  implements OnInit {
+export class NotificationBannerComponent   {
 
-constructor(private toastController: ToastController) {}
+  showToast = false;
+  toastButtons = [
+    {
+      text: 'x',
+      role: 'cancel'
+    }
+  ];
+
+  constructor() {}
+
   ngOnInit() {
-    this.presentToast();
+    setTimeout(() => {
+      this.showToast = true;
+    }, 3000);
   }
-
-  async presentToast() {
-    const toast = await this.toastController.create({
-      message: '🚀 Custom Styled Notification!',
-      duration: 5000,
-      position: 'top',
-      cssClass: 'custom-toast', // Custom class for styling
-      buttons: [
-        {
-          text: '✖',
-          role: 'cancel'
-        }
-      ]
-    });
-    await toast.present();
-  }
-  
-
 }

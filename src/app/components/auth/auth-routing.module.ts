@@ -15,6 +15,8 @@ import { PromoRunningComponent } from './promo-running/promo-running.component';
 import { LocationComponent } from './location/location.component';
 import { NotificationBannerComponent } from './notification-banner/notification-banner.component';
 import { QuickSelectionComponent } from './quick-selection/quick-selection.component';
+import { ProductDetailComponent } from './product-detail/product-detail.component';
+import { AddedCartComponent } from './added-cart/added-cart.component';
 
 
 const routes: Routes = [
@@ -63,6 +65,14 @@ const routes: Routes = [
       {
         path: 'notification-banner',
         component: NotificationBannerComponent,
+      },
+      {
+        path: 'product-detail',
+        component: ProductDetailComponent,
+      },
+      {
+        path: 'added-to-cart',
+        component: AddedCartComponent,
       },
      
       {
