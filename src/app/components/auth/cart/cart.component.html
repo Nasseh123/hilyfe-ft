@@ -1,0 +1,34 @@
+<ion-content>
+  <app-product-detail-layout>
+    <ion-title class="text-center">Cart</ion-title>
+    <app-cart-header title="Your Cart" subtitle="5 items"></app-cart-header>
+    <app-cart-card
+      [image]="'/assets/dosi-cake.png'"
+      [title]="'Dosi Cake'"
+      [price]="45"
+      [size]="'Small'"
+      [quantity]="10"
+      (quantityChange)="updateQuantity($event)"
+      (remove)="removeItem()">
+    </app-cart-card>
+    <app-cart-card
+      [image]="'/assets/dosi-cake.png'"
+      [title]="'Dosi Cake'"
+      [price]="45"
+      [size]="'Small'"
+      [quantity]="10"
+      (quantityChange)="updateQuantity($event)"
+      (remove)="removeItem()">
+    </app-cart-card>
+    <app-cart-header title="Substotal" subtitle="$150.00"></app-cart-header>
+
+    <ion-button
+      expand="full"
+      size="large"
+      fill="solid"
+      shape="round"
+      class="mt-4">
+      <h1 class="text-white text-sm">Checkout Now</h1>
+    </ion-button>
+  </app-product-detail-layout>
+</ion-content>

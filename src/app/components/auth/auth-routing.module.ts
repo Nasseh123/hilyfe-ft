@@ -17,6 +17,8 @@ import { NotificationBannerComponent } from './notification-banner/notification-
 import { QuickSelectionComponent } from './quick-selection/quick-selection.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
 import { AddedCartComponent } from './added-cart/added-cart.component';
+import { CartComponent } from './cart/cart.component';
+import { CheckoutComponent } from './checkout/checkout.component';
 
 
 const routes: Routes = [
@@ -73,6 +75,14 @@ const routes: Routes = [
       {
         path: 'added-to-cart',
         component: AddedCartComponent,
+      },
+      {
+        path: 'cart',
+        component: CartComponent,
+      },
+      {
+        path: 'checkout',
+        component: CheckoutComponent,
       },
      
       {

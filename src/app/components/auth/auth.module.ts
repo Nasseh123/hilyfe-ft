@@ -5,7 +5,7 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 
 import { AuthRoutingModule } from './auth-routing.module';
-
+import { RouterModule } from '@angular/router'; 
 
 import { LoginComponent } from './login/login.component';
 import { AuthHeroComponent } from './auth-hero/auth-hero.component';
@@ -16,7 +16,8 @@ import { AuthHeroComponent } from './auth-hero/auth-hero.component';
     CommonModule,
     FormsModule,
     AppRoutingModule,
-    AuthRoutingModule
+    AuthRoutingModule,
+    RouterModule
   ],
   declarations: [],
 })
