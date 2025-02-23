@@ -1,7 +1,8 @@
 <ion-content>
   <app-product-detail-layout>
     <!-- Back Button -->
-    <div class="flex justify-between w-full items-center pt-1">
+    <div
+      class="flex justify-between w-full items-center pb-2 pt-1 border-b border-gray-300 border-opacity-30 mb-3">
       <div
         class="rounded-full border border-gray-500 flex items-center cursor-pointer p-[5px]">
         <!-- https://feathericons.dev/?search=chevron-left&iconset=feather -->
@@ -49,17 +50,16 @@
         </button>
 
         <!-- Order Summary Content -->
-        <div *ngIf="isOpen" class="p-4 border rounded-lg mt-2">
-          <p>Order summary details go here...</p>
-        </div>
-
-        <!-- Order Summary Content -->
-        <div *ngIf="isOpen" class="p-4 border rounded-lg mt-2">
-          <p>Order summary details go here...</p>
-        </div>
 
         <ion-text class="font-semibold">$900</ion-text>
       </div>
     </div>
+    <!--checkout  Order Items -->
+    <div *ngIf="isOpen" class="p-4 border rounded-lg mt-2">
+      <app-checkout-orderitems></app-checkout-orderitems>
+      <app-checkout-orderitems></app-checkout-orderitems>
+    </div>
+
+    <app-checkout-general></app-checkout-general>
   </app-product-detail-layout>
 </ion-content>
