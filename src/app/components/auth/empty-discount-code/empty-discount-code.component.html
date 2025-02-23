@@ -1,0 +1,54 @@
+<app-layout>
+  <ion-content>
+    <ion-toolbar>
+      <div
+        class="flex justify-between w-full items-center pb-2 pt-1 border-b border-gray-300 border-opacity-30 mb-3">
+        <div
+          class="rounded-full border border-gray-500 flex items-center cursor-pointer p-[5px]">
+          <!-- https://feathericons.dev/?search=chevron-left&iconset=feather -->
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            width="14"
+            height="14"
+            class="main-grid-item-icon"
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2">
+            <polyline points="15 18 9 12 15 6" />
+          </svg>
+        </div>
+        <h1 class="text-lg text-center">My Discount Codes</h1>
+        <div></div>
+      </div>
+    </ion-toolbar>
+
+    <ion-card class="bg-hl_green_main text-white rounded-lg p-4">
+      <ion-card-content>
+        <ion-card-title class="text-3xl text-white font-extrabold"
+          >2/10</ion-card-title
+        >
+        <p class="text-sm mt-2">
+          You're 10 orders (paid via <b>CASH</b> or <b>STRIPE</b> only) away
+          from your next
+          <b>$50 discount code</b>
+        </p>
+      </ion-card-content>
+    </ion-card>
+
+    <div
+      class="flex flex-col justify-center items-center w-full pb-6 tt-10 mx-auto">
+      <ion-img
+        src="/assets/referral-code.png"
+        class="h-[150px] w-[150px] bg-gray-100 pt-8 bg-opacity-30 rounded-md"
+        alt="">
+      </ion-img>
+      <h1 class="text-lg text-center font-bold pb-6">
+        You Have No Referral Codes
+      </h1>
+      <app-policies></app-policies>
+    </div>
+  </ion-content>
+</app-layout>

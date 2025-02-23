@@ -1,0 +1,96 @@
+<app-layout>
+  <ion-content>
+    <ion-toolbar>
+      <div
+        class="flex justify-between w-full items-center pb-2 pt-1 border-b border-gray-300 border-opacity-30 mb-3">
+        <div
+          class="rounded-full border border-gray-500 flex items-center cursor-pointer p-[5px]">
+          <!-- https://feathericons.dev/?search=chevron-left&iconset=feather -->
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            width="14"
+            height="14"
+            class="main-grid-item-icon"
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2">
+            <polyline points="15 18 9 12 15 6" />
+          </svg>
+        </div>
+        <h1 class="text-lg text-center">Security</h1>
+        <div></div>
+      </div>
+    </ion-toolbar>
+    <!-- password input -->
+
+    <div class="relative w-full mt-3 border border-gray-300 px-3 rounded-lg">
+      <ion-input
+        [type]="showPassword ? 'text' : 'password'"
+        placeholder="*********"
+        class="custom w-full"
+        aria-label="Password">
+      </ion-input>
+
+      <!-- Eye Icon for Toggling Password Visibility -->
+      <button
+        type="button"
+        (click)="togglePasswordVisibility()"
+        class="absolute inset-y-0 right-3 flex items-center text-gray-500 bg-white">
+        <ion-icon
+          [name]="showPassword ? 'eye-off-outline' : 'eye-outline'"
+          class="text-x"
+          color="">
+        </ion-icon>
+      </button>
+    </div>
+    <div class="relative w-full mt-3 border border-gray-300 px-3 rounded-lg">
+      <ion-input
+        [type]="showPassword ? 'text' : 'password'"
+        placeholder="*********"
+        class="custom w-full"
+        aria-label="Password">
+      </ion-input>
+
+      <!-- Eye Icon for Toggling Password Visibility -->
+      <button
+        type="button"
+        (click)="togglePasswordVisibility()"
+        class="absolute inset-y-0 right-3 flex items-center text-gray-500 bg-white">
+        <ion-icon
+          [name]="showPassword ? 'eye-off-outline' : 'eye-outline'"
+          class="text-x"
+          color="">
+        </ion-icon>
+      </button>
+    </div>
+    <div class="relative w-full mt-3 border border-gray-300 px-3 rounded-lg">
+      <ion-input
+        [type]="showPassword ? 'text' : 'password'"
+        placeholder="*********"
+        class="custom w-full"
+        aria-label="Password">
+      </ion-input>
+
+      <!-- Eye Icon for Toggling Password Visibility -->
+      <button
+        type="button"
+        (click)="togglePasswordVisibility()"
+        class="absolute inset-y-0 right-3 flex items-center text-gray-500 bg-white">
+        <ion-icon
+          [name]="showPassword ? 'eye-off-outline' : 'eye-outline'"
+          class="text-x"
+          color="">
+        </ion-icon>
+      </button>
+    </div>
+
+    <div class="fixed bottom-5 left-0 right-0 w-full max-w-tablet mx-auto px-4">
+      <ion-button class="w-full mt-5 capitalize" shape="round" size="large">
+        <h1 class="text-white font-light">Reset</h1>
+      </ion-button>
+    </div>
+  </ion-content>
+</app-layout>
