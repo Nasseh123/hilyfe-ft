@@ -1,0 +1,17 @@
+ion-toolbar {
+    --color: black;
+    --border-color: transparent !important;
+    --box-shadow: none !important;
+    --ion-border-color: transparent !important;
+    box-shadow: none !important;
+    border-bottom: none !important;
+  
+    --min-height: 80px;
+    --padding-top: 20px;
+    --padding-bottom: 20px;
+  }
+
+  ion-item{
+    --border-color: transparent; 
+    --inner-border-width: 0;
+  }

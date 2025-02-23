@@ -19,9 +19,20 @@ import { ProductDetailComponent } from './product-detail/product-detail.componen
 import { AddedCartComponent } from './added-cart/added-cart.component';
 import { CartComponent } from './cart/cart.component';
 import { CheckoutComponent } from './checkout/checkout.component';
+import { MoreComponent } from './more/more.component';
+import { MyProfileComponent } from './my-profile/my-profile.component';
+import { SecurityComponent } from './security/security.component';
+import { TermsOfserviceComponent } from './terms-ofservice/terms-ofservice.component';
+import { DataPrivacyComponent } from './data-privacy/data-privacy.component';
+import { RefundPolicyComponent } from '../refund-policy/refund-policy.component';
+import { EmptyreferalCodeComponent } from './emptyreferal-code/emptyreferal-code.component';
+import { PresentreferalCodeComponent } from './presentreferal-code/presentreferal-code.component';
+import { EmptyDiscountCodeComponent } from './empty-discount-code/empty-discount-code.component';
+import { PresentDiscountCodeComponent } from './present-discount-code/present-discount-code.component';
 
 
 const routes: Routes = [
+  // auth routes
 
       {
         path: 'welcome',
@@ -31,11 +42,29 @@ const routes: Routes = [
         path: 'register',
         component: RegisterComponent,
       },
-    
+      {
+        path: 'otp-verification',
+        component:OtpVerificationComponent
+      },
+      {
+        path: 'password-change',
+        component: PasswordChangeComponent,
+      },
+      {
+        path: 'password-reset',
+        component:PasswordResetComponent
+      },
+      {
+        path: 'register/email-confirmation',
+        component: RegisterEmailConfirmationComponent
+      },
       {
         path: 'login',
         component: LoginComponent,
       },
+
+      // homepage routes
+
       {
         path: 'home',
         component: HomeComponent,
@@ -84,23 +113,49 @@ const routes: Routes = [
         path: 'checkout',
         component: CheckoutComponent,
       },
-     
-      {
-        path: 'otp-verification',
-        component:OtpVerificationComponent
-      },
-      {
-        path: 'password-change',
-        component: PasswordChangeComponent,
-      },
-      {
-        path: 'password-reset',
-        component:PasswordResetComponent
-      },
-      {
-        path: 'register/email-confirmation',
-        component: RegisterEmailConfirmationComponent
-      },
+
+    //  settings routes
+    {
+      path: 'more',
+      component: MoreComponent,
+    },
+    {
+      path: 'my-profile',
+      component: MyProfileComponent,
+    },
+    {
+      path: 'security',
+      component: SecurityComponent,
+    },
+    {
+      path: 'terms-of-service',
+      component: TermsOfserviceComponent,
+    },
+    {
+      path: 'data-privacy',
+      component: DataPrivacyComponent,
+    },
+    {
+      path: 'refund-policy',
+      component: RefundPolicyComponent,
+    },
+    {
+      path: 'referral-code-empty',
+      component: EmptyreferalCodeComponent,
+    },
+    {
+      path: 'referral-code-present',
+      component: PresentreferalCodeComponent,
+    },
+    {
+      path: 'empty-state-discount',
+      component: EmptyDiscountCodeComponent,
+    },
+    {
+      path: 'present-discount-code',
+      component: PresentDiscountCodeComponent,
+    },
+  
 
       // {
       //   path: 'welcome',
